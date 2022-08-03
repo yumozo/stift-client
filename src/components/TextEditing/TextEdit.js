@@ -92,7 +92,7 @@ const MenuBar = ({ editor, textObj }) => {
   );
 };
 
-const TextEditor = () => {
+export default function TextEditor() {
   const editor = useEditor({
     extensions: [StarterKit, BubbleMenu],
     content: `
@@ -109,5 +109,3 @@ const TextEditor = () => {
     </>
   );
 };
-
-export default TextEditor;

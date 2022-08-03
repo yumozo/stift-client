@@ -5,17 +5,28 @@ import { Layout } from './components/Layout';
 import Login from "./components/Login/Login";
 import './custom.css';
 
+function setToken(userToken) {
+  sessionStorage.setItem('token', JSON.stringify(userToken))
+}
+
+function getToken() {
+  const tokenString = sessionStorage.getItem('token');
+  const userToken = JSON.parse(tokenString)
+  return userToken?.token
+}
+
 export default function App() {
 
-  const [token, setToken] = useState();
+  // const [token, setToken] = useState();
+  const token = getToken();
 
-  if (!token) {
-    return (
-      <Layout>
-        <Login setToken={setToken} />
-      </Layout>
-    )
-  }
+  // if (!token) {
+  //   return (
+  //     <Layout>
+  //       <Login setToken={setToken} />
+  //     </Layout>
+  //   )
+  // }
 
   return (
     <Layout>
