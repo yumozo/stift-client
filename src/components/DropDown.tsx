@@ -1,9 +1,9 @@
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { Menu, Transition } from "@headlessui/react";
 import { DotsVerticalIcon } from "@heroicons/react/solid";
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 

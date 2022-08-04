@@ -1,15 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Noto+Serif:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply bg-white;
+  @apply bg-white dark:bg-[#090909];
   padding: 0;
   margin: 0;
   font-family: Noto sans, sans-serif;
+}
+
+.surface01dp {
+  @apply bg-white dark:bg-[#1E1E1E];
+}
+
+.surface08dp {
+  @apply bg-white dark:bg-[#2D2D2D];
+}
+
+.regular-text-color {
+  @apply text-black dark:text-[#EBEBEB]
 }
 
 .text-editor-buttons button {
@@ -33,6 +46,10 @@ body {
 
 .ProseMirror:focus-visible {
   outline: 0;
+}
+
+.a:hover, a:visited, a:active {
+  color: inherit
 }
 
 #logo {

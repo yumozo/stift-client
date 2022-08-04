@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect } from "react";
 
-const FetchData = (props) => {
+export default function FetchData() {
   // displayName = FetchData.name;
 
   const [state, setState] = useState({
@@ -22,7 +22,7 @@ const FetchData = (props) => {
           </tr>
         </thead>
         <tbody>
-          {records.map((record) => (
+          {records.map((record: any) => (
             <tr key={record.date}>
               <td>{record.title}</td>
               <td>{record.date}</td>
@@ -61,5 +61,3 @@ const FetchData = (props) => {
     </div>
   );
 };
-
-export default FetchData;

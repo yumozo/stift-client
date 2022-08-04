@@ -21,12 +21,12 @@ export default function Home() {
 
 
   // Fetching data from db
-  const renderTable = (records) => {
+  const renderTable = (records: any) => {
     return (
       <table className="mt-8 text-sm text-left w-full xl:w-3/4">
         <tbody>
           {console.log(records)}
-          {records.map((record) => (
+          {records.map((record: any) => (
             <tr className="bg-white border-b" key={record.date}>
               <th scope="row" className="py-4  font-normal whitespace-nowrap">
                 <a href="/record/id">{record.title}</a>
@@ -62,16 +62,9 @@ export default function Home() {
   );
 
   return (
-    <div className="flex flex-col items-center">
-      <main className="w-3/5 px-2 py-3">
-        <div className="flex flex-col items-center px-4">
-
-          <span className="text-lg pb-4">Archive</span>
-          {console.log('im here')}
-          {contents}
-
-        </div>
-      </main>
-    </div>
+    <main className="flex flex-col items-center w-3/5 px-6 py-3">
+      <span className="text-lg pb-4">Archive</span>
+      {contents}
+    </main>
   );
 };

@@ -7,7 +7,7 @@ import {
   ChevronDoubleRightIcon,
 } from "@heroicons/react/solid";
 
-const MenuBar = ({ editor, textObj }) => {
+const MenuBar = ({ editor, textObj }: any) => {
   const [textState, setTextState] = useState(textObj);
 
   const componentDidMount = () => {
@@ -65,30 +65,30 @@ const MenuBar = ({ editor, textObj }) => {
   if (!editor) return null;
 
   return (
-      <div className="flex flex-row text-editor-buttons pb-4 text-sm justify-between">
-        <div>
-          <button onClick={() => editor.chain().focus().undo().run()}>
-            <ChevronDoubleLeftIcon className="h-4 w-4" />
-          </button>
-          <button onClick={() => editor.chain().focus().redo().run()}>
-            <ChevronDoubleRightIcon className="h-4 w-4" />
-          </button>
-        </div>
-        <div>
-          <button
-            onClick={() => editor.chain().focus().toggleHighlight().run()}
-            className={editor.isActive("bg-yellow-400") ? "is-active" : ""}
-          >
-            duplicate
-          </button>
-          <button onClick={(e) => update(e)} id="save-button">
-            save
-          </button>
-          <button onClick={() => exportText()} id="export-button">
-            export
-          </button>
-        </div>
+    <div className="flex flex-row text-editor-buttons pb-4 text-sm justify-between">
+      <div>
+        <button onClick={() => editor.chain().focus().undo().run()}>
+          <ChevronDoubleLeftIcon className="h-4 w-4" />
+        </button>
+        <button onClick={() => editor.chain().focus().redo().run()}>
+          <ChevronDoubleRightIcon className="h-4 w-4" />
+        </button>
       </div>
+      <div>
+        <button
+          onClick={() => editor.chain().focus().toggleHighlight().run()}
+          className={editor.isActive("bg-yellow-400") ? "is-active" : ""}
+        >
+          duplicate
+        </button>
+        <button onClick={(e) => update(e)} id="save-button">
+          save
+        </button>
+        <button onClick={() => exportText()} id="export-button">
+          export
+        </button>
+      </div>
+    </div>
   );
 };
 
@@ -101,11 +101,9 @@ export default function TextEditor() {
   });
 
   return (
-    <>
-      <div className="border-2 border-gray-400/20 px-4 py-2 bg-white">
-        <MenuBar editor={editor} />
-        <EditorContent editor={editor} />
-      </div>
-    </>
+    <div className="border-2 border-gray-400/20 px-4 py-2 bg-white">
+      <MenuBar editor={editor} />
+      <EditorContent editor={editor} />
+    </div>
   );
 };
