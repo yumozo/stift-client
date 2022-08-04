@@ -7,22 +7,10 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white dark:bg-[#090909];
+  @apply bg-white /* dark:bg-[#090909] */;
   padding: 0;
   margin: 0;
   font-family: Noto sans, sans-serif;
-}
-
-.surface01dp {
-  @apply bg-white dark:bg-[#1E1E1E];
-}
-
-.surface08dp {
-  @apply bg-white dark:bg-[#2D2D2D];
-}
-
-.regular-text-color {
-  @apply text-black dark:text-[#EBEBEB]
 }
 
 .text-editor-buttons button {
@@ -48,7 +36,7 @@ body {
   outline: 0;
 }
 
-.a:hover, a:visited, a:active {
+a:visited, a:active {
   color: inherit
 }
 

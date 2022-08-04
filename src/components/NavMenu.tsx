@@ -19,10 +19,8 @@ export default function NavMenu() {
   return (
     // <header>
     <nav className="xl:w-1/2 w-3/5
-                    relative flex flex-wrap
-                    items-center justify-between
-                    mb-3
-                    bg-[#00000000]"
+                    fixed flex flex-wrap
+                    items-center justify-between"
     >
       <div className="container
                       flex flex-wrap
@@ -38,8 +36,8 @@ export default function NavMenu() {
           >
             Stift
           </Link>
-          <div className="flex w-24 justify-between items-center">
-            <ToggleThemeButton />
+          <div className="flex w-12 justify-between items-center">
+            {/* <ToggleThemeButton /> */}
             <DropDown />
           </div>
         </div>

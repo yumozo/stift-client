@@ -27,7 +27,7 @@ export default function Home() {
         <tbody>
           {console.log(records)}
           {records.map((record: any) => (
-            <tr className="bg-white border-b" key={record.date}>
+            <tr key={record.date}>
               <th scope="row" className="py-4  font-normal whitespace-nowrap">
                 <a href="/record/id">{record.title}</a>
               </th>
@@ -36,11 +36,11 @@ export default function Home() {
               </td>
             </tr>
           ))}
-          <tr className="bg-white">
+          <tr>
             <th
               colSpan={2}
               scope="row"
-              className="text-center py-4 text-gray-400 font-light whitespace-nowrap"
+              className="text-center py-4 font-light whitespace-nowrap"
             >
               <Link to="/text-edit" title="new record">
                 New

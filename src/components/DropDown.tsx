@@ -25,29 +25,33 @@ export default function DropDown() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="origin-top-right w-24 absolute right-0 mt-2 bg-white ring-2 ring-gray-400/20 ring-opacity-5 focus:outline-none">
+        <Menu.Items className="origin-top-right w-24 absolute right-0
+          mt-2
+          bg-white ring-2 ring-gray-400/20 ring-opacity-5
+          focus:outline-none"
+        >
           <div className="py-1">
             <Menu.Item>
               {({ active }) => (
                 <Link to="/"
-                    className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      "block px-4 py-2 text-sm"
-                    )}
-                  >
-                    Home
+                  className={classNames(
+                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    "block px-4 py-2 text-sm"
+                  )}
+                >
+                  Home
                 </Link>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
                 <Link to="/profile"
-                    className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      "block px-4 py-2 text-sm"
-                    )}
-                  >
-                    Profile
+                  className={classNames(
+                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    "block px-4 py-2 text-sm"
+                  )}
+                >
+                  Profile
                 </Link>
               )}
             </Menu.Item>
