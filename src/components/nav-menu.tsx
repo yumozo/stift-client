@@ -1,11 +1,8 @@
-import React, { Component, useState } from "react";
-import DropDown from "./DropDown";
+import { useState } from "react";
+import DropDown from "./dropdown";
 import { Link } from "react-router-dom";
-import ToggleThemeButton from "./ToggleTheme";
-import { DotsVerticalIcon, PencilIcon } from "@heroicons/react/solid";
 
 export default function NavMenu() {
-
   const [state, setState] = useState({
     collapsed: true,
   });

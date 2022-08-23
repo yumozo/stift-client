@@ -1,8 +1,8 @@
 // import { Counter } from "./components/Counter";
 // import { FetchData } from "./components/FetchData";
-import Home from "./components/Home";
-import TextEditor from './components/TextEditing/TextEdit'
-import Profile from "./components/Profile";
+import Home from "@components/home";
+import TextEditor from '@components/TextEditor/text-editor'
+import Profile from "@components/profile";
 import { Info } from "./components/Info";
 
 const AppRoutes = [

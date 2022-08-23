@@ -1,8 +1,7 @@
-import React, { Component, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function FetchData() {
   // displayName = FetchData.name;
-
   const [state, setState] = useState({
     records: [],
     loading: true,
@@ -12,7 +11,7 @@ export default function FetchData() {
     populateRecordsData();
   });
 
-  const renderRecordsTable = (records) => {
+  const renderRecordsTable = (records: any) => {
     return (
       <table className="table table-striped" aria-labelledby="tabelLabel">
         <thead>

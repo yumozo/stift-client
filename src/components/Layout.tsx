@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import NavMenu from "./NavMenu";
+import NavMenu from "./nav-menu";
 
 export default function Layout(props: any) {
 

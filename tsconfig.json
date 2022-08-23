@@ -7,33 +7,41 @@
       "ESNext",
       "esnext.asynciterable"
     ],
-    "jsx": "react-jsx",
-    "module": "commonjs",
-    "baseUrl": "./src",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
     "outDir": "./dest",
-    "removeComments": false,
-    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "removeComments": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "noImplicitAny": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
-    "noImplicitThis": true,
+    "noImplicitAny": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
+    "noImplicitThis": true,
     "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "noEmit": true,
-    "skipLibCheck": true
+    "jsx": "preserve",
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ]
+    },
+    "incremental": true
   },
   "exclude": [
     "node_modules"
   ],
   "include": [
-    "src/**/*.{ts,tsx}"
-  ]
+    "src/**/*.ts",
+    "src/**/*.tsx"
+, "src/index.js"  ]
 }

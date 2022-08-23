@@ -1,8 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import "./Profile.css";
+import "./ProfileStyle.css";
 
-const Profile = () => {
+export default function Profile() {
   return (
     <>
       <span className="text-lg pb-4">Profile</span>
@@ -58,5 +57,3 @@ const Profile = () => {
 
   );
 };
-
-export default Profile;
