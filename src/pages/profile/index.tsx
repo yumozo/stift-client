@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
-import "./ProfileStyle.css";
+import Link from "next/link";
+import styled from 'styled-components'
+
+const InfoLine = styled.div``
 
 export default function Profile() {
   return (
@@ -19,7 +21,7 @@ export default function Profile() {
             <span className="">Email</span>
             <Link
               className="text-indigo-500 font-light text-sm"
-              to="/changepassword"
+              href="/changepassword"
               title="change email"
             >
               {"blankinyermemory@outlook.com"}
@@ -31,7 +33,7 @@ export default function Profile() {
             <span className="">Password</span>
             <Link
               className="text-indigo-500 font-light text-sm"
-              to="/changepassword"
+              href="/changepassword"
             >
               Change password
             </Link>

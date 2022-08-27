@@ -42,6 +42,5 @@
   ],
   "include": [
     "src/**/*.ts",
-    "src/**/*.tsx"
-, "src/index.js"  ]
+    "src/**/*.tsx"]
 }

@@ -1,4 +1,4 @@
-export default function ToggleThemeButton() {
+export default function ThemeSwitch() {
 
   const changeTheme = () => {
     if (localStorage.theme === 'dark') {

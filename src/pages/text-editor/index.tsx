@@ -35,22 +35,22 @@ const MenuBar = ({ editor, textObj }: any) => {
         console.log(err);
       });
   };
-  const create = (e) => {
+  const create = (e: any) => {
     // add entity - POST
     e.preventDefault();
   };
-  const update = (e) => {
+  const update = (e: any) => {
     // update entity - PUT
     e.preventDefault();
   };
-  const remove = (e) => {
+  const remove = (e: any) => {
     // delete entity - DELETE
     e.preventDefault();
   };
-  const handleChange = (changeObject) => {
+  const handleChange = (changeObject: any) => {
     setTextState(changeObject);
   };
-  const saveChanges = async (e) => {
+  const saveChanges = async (e: any) => {
     // const response = await fetch('http://localhost:5006/api/records', {
     //   method: 'PUT',
     //   body: JSON.stringify({ text }),
